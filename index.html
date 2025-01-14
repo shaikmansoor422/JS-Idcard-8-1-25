@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 style="text-align: center;">creating an id card by adding and deleting functionalieties</h2>
+    <button onclick="idcard()" >Click here to see my ID card</button>
+    <button onclick="dlt()" >Click here to delete my ID card</button>
+
+    <script>
+       let idborder = document.createElement("div")
+       idborder.id ="fordlt"
+       let clgnm = document.createElement("p")
+       clgnm.id ="fordlt"
+       let clgadd = document.createElement("p")
+       clgadd.id ="fordlt"
+       let townnm = document.createElement("p")
+       townnm.id ="fordlt"
+       let scard = document.createElement("p")
+       scard.id ="fordlt"
+       let imgdiv= document.createElement("div")
+       imgdiv.id ="fordlt" 
+       let img = document.createElement("img")
+       img.id ="fordlt"
+       let myname = document.createElement("p")
+       myname.id ="fordlt"
+       let brnch = document.createElement("p")
+       brnch.id ="fordlt"
+       let prsign = document.createElement("p")
+       prsign.id ="fordlt"
+       let prclpl = document.createElement("p")
+       prclpl.id ="fordlt"
+
+
+        function idcard(){
+            //styling for id border
+            idborder.style.border = "5px solid grey"
+            idborder.style.width = "260px"
+            idborder.style.height = "400px"
+            idborder.style.borderRadius = "10px"
+            idborder.style.margin = "40px auto 10px"
+            idborder.style.boxShadow = "0px 0px 12px 10px "
+            idborder.style.backgroundColor = "skyblue"
+            
+
+            //styling my clgname
+            clgnm.innerHTML = "KRISHNA CHAITANYA "
+            clgnm.style.color = "red"
+            clgnm.style.fontSize ="22px"
+            clgnm.style.fontWeight ="bolder"
+            clgnm.style.textAlign = "center"
+            clgnm.style.margin = "20px auto 1px"
+
+            //styling my clgadd
+            clgadd.innerHTML = "INST OF TECH. & SCIENCES "
+            clgadd.style.color = "brown"
+            clgadd.style.fontSize ="12px"
+            clgadd.style.fontWeight ="bolder"
+            clgadd.style.textAlign = "center"
+            clgadd.style.margin = "auto"
+
+            //styling my townnm
+            townnm.innerHTML = 'MARKAPUR'
+            townnm.style.color = "blue"
+            townnm.style.fontSize ="16px"
+            townnm.style.fontWeight ="bolder"
+            townnm.style.textAlign = "center"
+            townnm.style.margin = "auto"
+
+            //styling my card name
+            scard.innerHTML = "STUDENT <br> IDENTITY CARD "
+            scard.style.color = "black"
+            scard.style.fontSize ="12px"
+            scard.style.fontWeight ="bolder"
+            scard.style.textAlign = "center"
+            scard.style.marginTop = "10px"
+
+
+            //styling my id image
+            imgdiv.style.border = "3px solid white"
+            imgdiv.style.width = "90px"
+            imgdiv.style.height = "110px"
+            imgdiv.style.margin = "20px auto"
+            imgdiv.style.borderRadius = "5px"
+            img.src = "./gratisography-cool-cat-800x525.jpg"
+            img.style.height = "100%"
+            img.style.width = "100%"
+
+            //styling my name
+            myname.innerHTML = 'SHAIK MANSOOR'
+            myname.style.color = "black"
+            myname.style.fontSize ="18px"
+            myname.style.fontWeight ="bolder"
+            myname.style.textAlign = "center"
+
+            //styling my numbers 
+            brnch.innerHTML = '<pre>B.TECH - CSE <br>21JU5A0502</pre>'
+            brnch.style.color = "black"
+            brnch.style.fontSize ="13px"
+            brnch.style.fontWeight ="bolder"
+            brnch.style.textAlign = "center"
+
+
+            
+            //styling my pricipal name
+            prsign.innerHTML = 'v.vinayak'
+            prsign.style.color = "blue"
+            prsign.style.fontSize ="15px"
+            prsign.style.fontWeight ="bolder"
+            prsign.style.textAlign = "end"
+            prsign.style.margin = "5px"
+
+
+
+            
+            //styling my principal
+            prclpl.innerHTML = 'principal'
+            prclpl.style.color = "black"
+            prclpl.style.fontSize ="8px"
+            prclpl.style.fontWeight ="bolder"
+            prclpl.style.textAlign = "end"
+            prclpl.style.margin = "5px"
+            
+            //appending
+            document.body.append(idborder)
+            idborder.appendChild(clgnm)
+            idborder.appendChild(clgadd)
+            idborder.appendChild(townnm)
+            idborder.appendChild(scard)
+            idborder.appendChild(imgdiv)
+            imgdiv.appendChild(img)
+            idborder.appendChild(myname) 
+            idborder.appendChild(brnch) 
+            idborder.appendChild(prsign) 
+            idborder.appendChild(prclpl) 
+        }
+
+
+        function dlt(){
+            let element = document.getElementById("fordlt")
+            element.remove()
+        }
+    </script>
+</body>
+</html>
